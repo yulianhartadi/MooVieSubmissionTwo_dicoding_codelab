@@ -18,6 +18,14 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
     private ArrayList<MovieTVModel> listMovie;
 
+    // interface onItemClickCallBack
+    private OnItemClickCallBack onItemClickCallBack;
+
+    // constructor onItemClickCallBack
+    public void setOnItemClickCallBack(OnItemClickCallBack onItemClickCallBack) {
+        this.onItemClickCallBack = onItemClickCallBack;
+    }
+
     public MovieAdapter(ArrayList<MovieTVModel> listMovie) {
         this.listMovie = listMovie;
     }
@@ -30,7 +38,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final ViewHolder holder, final int position) {
         MovieTVModel movie = listMovie.get(position);
 
         Glide.with(holder.itemView.getContext())
@@ -43,7 +51,13 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         holder.tvMovieStoryline.setText(movie.getStorylineMovie());
         holder.tvRatingMovie.setText(movie.getRatingMovie());
 
-        //Click listener items
+        //More Info Click listener items
+        holder.tvMoreInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onItemClickCallBack.onItemClicked(listMovie.get(holder.getAdapterPosition()));
+            }
+        });
 
     }
 
@@ -55,7 +69,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         ImageView imgThumbMoviePoster;
-        TextView tvTitleMovie, tvMoviePh, tvMovieStoryline, tvRatingMovie;
+        TextView tvTitleMovie, tvMoviePh, tvMovieStoryline, tvRatingMovie, tvMoreInfo;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -64,10 +78,13 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             tvMoviePh = itemView.findViewById(R.id.tv_ph_movie);
             tvMovieStoryline = itemView.findViewById(R.id.tv_movie_storyline);
             tvRatingMovie = itemView.findViewById(R.id.tv_movie_rating);
+            tvMoreInfo = itemView.findViewById(R.id.tv_more_info);
         }
     }
 
     // Interface parameter onClickItem
-
+    public interface OnItemClickCallBack{
+        void onItemClicked(MovieTVModel data);
+    }
 
 }

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DefaultItemAnimator;
@@ -51,10 +52,21 @@ public class MoviesFragment extends Fragment {
         initArrayContent();
         addItemsMovieTv();
 
+
+
         // Create & add Adapter
         MovieAdapter movieAdapter = new MovieAdapter(listMovie);
         rvMovie.setAdapter(movieAdapter);
         rvMovie.setItemAnimator(new DefaultItemAnimator());
+
+        // onClickListener to detail movie items
+        movieAdapter.setOnItemClickCallBack(new MovieAdapter.OnItemClickCallBack() {
+            @Override
+            public void onItemClicked(MovieTVModel data) {
+                showSelectedMovie(data);
+            }
+        });
+
 
         return rootView;
     }
@@ -74,7 +86,6 @@ public class MoviesFragment extends Fragment {
             listMovie.add(movie);
         }
 
-
     }
 
     // Initiate arrayList
@@ -85,6 +96,12 @@ public class MoviesFragment extends Fragment {
         dataPhMovie = getResources().getStringArray(R.array.ph_movies);
         dataStorylineMovie = getResources().getStringArray(R.array.storyline_movies);
         dataRatingMovie = getResources().getStringArray(R.array.rating_movies);
+
+    }
+
+    // Click to detail items movie
+    private void showSelectedMovie(MovieTVModel movieTVModel){
+        Toast.makeText(getActivity(), "detail to : " + movieTVModel.getTitleMovie(), Toast.LENGTH_SHORT).show();
 
     }
 
