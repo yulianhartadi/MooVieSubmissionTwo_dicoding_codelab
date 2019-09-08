@@ -8,6 +8,488 @@
     <string name="OK">OK</string>
     <string name="CANCEL">CANCEL</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Movie Thumbnail Content -->
+    <string name="title_movies">Title Movie</string>
+    <string name="ph_movies">production house</string>
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie.  Fusce quis mauris a enim sollicitudin
+        \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie.  Fusce quis mauris a enim sollicitudin
+    </string>
+    <string name="rating">rating</string>
+
+    <!-- Content Movie -->
+    <integer-array name="poster_movies">
+        <item>@drawable/poster_a_star</item>
+        <item>@drawable/poster_aquaman</item>
+        <item>@drawable/poster_avengerinfinity</item>
+        <item>@drawable/poster_birdbox</item>
+        <item>@drawable/poster_bohemian</item>
+        <item>@drawable/poster_bumblebee</item>
+        <item>@drawable/poster_creed</item>
+        <item>@drawable/poster_deadpool</item>
+        <item>@drawable/poster_dragon</item>
+        <item>@drawable/poster_dragonball</item>
+        <item>@drawable/poster_glass</item>
+        <item>@drawable/poster_hunterkiller</item>
+        <item>@drawable/poster_marrypopins</item>
+        <item>@drawable/poster_mortalengine</item>
+        <item>@drawable/poster_preman</item>
+        <item>@drawable/poster_robinhood</item>
+        <item>@drawable/poster_spiderman</item>
+        <item>@drawable/poster_thegirl</item>
+        <item>@drawable/poster_themule</item>
+        <item>@drawable/poster_venom</item>
+    </integer-array>
+
+    <string-array name="title_movies">
+        <item>A Star is Born</item>
+        <item>Aquaman</item>
+        <item>Avengers Infinity War</item>
+        <item>BirdBox</item>
+        <item>Bohemian Rhapsody</item>
+        <item>BumbleBee</item>
+        <item>Creed II</item>
+        <item>DeadPool 2</item>
+        <item>How To Train Your Dragon The Hidden World</item>
+        <item>Dragon Ball Broly The Movie</item>
+        <item>Glass</item>
+        <item>Hunter Killer</item>
+        <item>Marry Poppins Returns</item>
+        <item>Mortal Engines</item>
+        <item>Preman Pensiun</item>
+        <item>Robin Hood</item>
+        <item>SpiderMan: Into The Spider Verse</item>
+        <item>The Girl In The Spider\'s Web</item>
+        <item>The Mule</item>
+        <item>Venom</item>
+    </string-array>
+
+    <string-array name="ph_movies">
+        <item>Warner Bros. Pictures</item>
+        <item>DC Entertainment</item>
+        <item>Marvel Studios</item>
+        <item>Netflix</item>
+        <item>GK Films</item>
+        <item>Hasbro</item>
+        <item>MGM Pictures, Warner Bros</item>
+        <item>20th Century Fox, Marvel</item>
+        <item>DreamWorks</item>
+        <item>Toei, Fox International</item>
+        <item>Universal Pictures</item>
+        <item>HK Productions</item>
+        <item>Walt Disney</item>
+        <item>MRC</item>
+        <item>MNC Pictures</item>
+        <item>Summit Entertainment</item>
+        <item>Sony, Columbia Pictures, Marvel</item>
+        <item>Columbia Pictures, MGM</item>
+        <item>Warner Bros</item>
+        <item>Columbia, Marvel</item>
+    </string-array>
+
+    <string-array name="storyline_movies">
+        <item>Seasoned musician Jackson Maine (Bradley Cooper) discovers-and falls in love
+            with-struggling artist Ally (Gaga). She has just about given up on her dream to make it
+            big as a singer - until Jack coaxes her into the spotlight. But even as Ally\'s career
+            takes off, the personal side of their relationship is breaking down, as Jack fights an
+            ongoing battle with his own internal demons.
+        </item>
+        <item>Arthur Curry, half human half from Atlantis, goes on a trip of a lifetime. Not only
+            does this adventure compel him to come to terms with his real identity, but it also
+            forces him to discover whether he is entirely worthy of fulfilling his own destiny:
+            becoming a king.
+        </item>
+        <item>As the Avengers and their allies have continued to protect the world from threats too
+            large for any one hero to handle, a new danger has emerged from the cosmic shadows:
+            Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity
+            Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all
+            of reality. Everything the Avengers have fought for has led up to this moment, the fate
+            of Earth and existence has never been more uncertain.
+        </item>
+        <item>In the wake of an unknown global terror, a mother must find the strength to flee with
+            her children down a treacherous river in search of safety. Due to unseen deadly forces,
+            the perilous journey must be made blindly. Directed by Emmy winner Susanne Bier, Bird
+            Box is a thriller starring Academy Award winner Sandra Bullock, John Malkovich, Sarah
+            Paulson, and Trevante Rhodes.
+        </item>
+        <item>Bohemian Rhapsody is a foot-stomping celebration of Queen, their music and their
+            extraordinary lead singer Freddie Mercury. Freddie defied stereotypes and shattered
+            convention to become one of the most beloved entertainers on the planet. The film traces
+            the meteoric rise of the band through their iconic songs and revolutionary sound. They
+            reach unparalleled success, but in an unexpected turn Freddie, surrounded by darker
+            influences, shuns Queen in pursuit of his solo career. Having suffered greatly without
+            the collaboration of Queen, Freddie manages to reunite with his bandmates just in time
+            for Live Aid. While bravely facing a recent AIDS diagnosis, Freddie leads the band in
+            one of the greatest performances in the history of rock music. Queen cements a legacy
+            that continues to inspire outsiders, dreamers and music lovers to this day.
+        </item>
+        <item>On Cybertron, the Autobots, led by Optimus Prime, are on the verge of losing the Great
+            Cybertronian War to their enemies, the Decepticons, and begin making preparations to
+            leave the planet. The Decepticons led by Shockwave, Soundwave and Starscream ambush them
+            during the evacuation, and Optimus sends a young scout, B-127, to Earth in order to set
+            up a base of operations where the Autobots can regroup. B-127 reaches Earth alone in
+            1987, crash-landing in California and disrupting a training exercise being conducted by
+            Sector 7, a secret government agency that monitors extraterrestrial activity on Earth.
+            Sector 7 agent Colonel Jack Burns presumes B-127 to be a hostile invader and attacks,
+            driving B-127 into the forest, where he is then ambushed by the Decepticon Blitzwing.
+            When B-127 refuses to reveal Optimus\' whereabouts, Blitzwing spitefully tears out his
+            voice-box and damages his memory core. B-127 manages to destroy Blitzwing before
+            collapsing from his wounds.
+        </item>
+        <item>Years after Adonis Creed made a name for himself under Rocky Balboa\'s mentorship, the
+            young boxer becomes the Heavyweight Champion of the World. While life is good with that
+            victory and his marriage to Bianca, trouble comes to Philadelphia when Ivan Drago, the
+            Russian boxer who killed Adonis\' father, Apollo, arrives with his son, Viktor, to
+            challenge Adonis. Against Rocky\'s advice, Adonis accepts the challenge without his
+            mentor\'s participation and pays the price in a punishing bout he wins only by a
+            technicality. Now injured and demoralized, Adonis cannot bring himself to back into the
+            game, leaving his spirit and title in jeopardy. Together, Adonis\' family and Rocky must
+            find a way to rekindle Adonis\' fighting spirit to face the future in whatever choice he
+            makes. Meanwhile, the Drago family have its own troubles trying to regain the respect in
+            their homeland that they lost at Rocky\'s hands as they wonder whether is it truly worth
+            it.
+        </item>
+        <item>After losing Vanessa (Morena Baccarin), the love of his life, 4th-wall breaking
+            mercenary Wade Wilson aka Deadpool (Ryan Reynolds) must assemble a team and protect a
+            young, full-figured mutant Russell Collins aka Firefist (Julian Dennison) from Cable
+            (Josh Brolin), a no-nonsense, dangerous cyborg from the future, and must also learn the
+            most important lesson of all: to be part of a family again.
+        </item>
+        <item>As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless\'
+            discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at
+            home and Hiccup\'s reign as village chief is tested, both dragon and rider must make
+            impossible decisions to save their kind.
+        </item>
+        <item>Goku and Vegeta encounter Broly, a Saiyan warrior unlike any fighter they\'ve faced
+            before.
+        </item>
+        <item>After pursuing Kevin Wendell Crumb and the multiple identities that reside within.
+            David Dunn finds himself locked in a mental hospital alongside his archenemy, Elijah
+            Price and must contend with a psychiatrist who is out to prove the trio do not actually
+            possess superhuman abilities
+        </item>
+        <item>A U.S. submarine, the USS Tampa Bay, vanishes while shadowing a Russian Akula-class
+            submarine in the Arctic. Rear Admiral John Fisk sends a Virginia-class submarine, the
+            USS Arkansas, under the command of newly-promoted and unorthodox Commander Joe Glass to
+            investigate. At the same time, a Navy SEAL team under the command of Lieutenant Bill
+            Beaman is sent in to discreetly observe a Russian naval base. When they arrive at the
+            naval base, they witness defense minister Dmitri Durov conducting a coup d\'etat and
+            taking Russian President Zakarin prisoner, and swiftly realize that Durov intends to
+            trigger a war.
+        </item>
+        <item>In Depression-era London, a now-grown Jane and Michael Banks, along with Michael\'s
+            three children, are visited by the enigmatic Mary Poppins following a personal loss.
+            Through her unique magical skills, and with the aid of her friend Jack, she helps the
+            family rediscover the joy and wonder missing in their lives.
+        </item>
+        <item>A mysterious young woman, Hester Shaw, emerges as the only one who can stop a giant,
+            predator city on wheels devouring everything in its path. Feral, and fiercely driven by
+            the memory of her mother, Hester joins forces with Tom Natsworthy, an outcast from
+            London, along with Anna Fang, a dangerous outlaw with a bounty on her head.
+        </item>
+        <item>After three years, the business of Muslihat, who has retired as a thug, has a problem.
+            Sales decline. Muslihat also faces new problems when Safira, her only daughter, grows up
+            in adolescence and begins to be visited by boys. A bigger problem: frictions between his
+            former subordinates.
+        </item>
+        <item>A war-hardened crusader Robin of Loxley (Taron Egerton) and his Moorish commander
+            (Jamie Foxx) mount an audacious revolt against the corrupt English crown.
+        </item>
+        <item>Miles Morales is a New York teen struggling with school, friends and, on top of that,
+            being the new Spider-Man. When he comes across Peter Parker, the erstwhile saviour of
+            New York, in the multiverse, Miles must train to become the new protector of his city.
+        </item>
+        <item>In Stockholm, Sweden, vigilante hacker Lisbeth Salander is hired by computer
+            programmer Frans Balder to retrieve Firefall, a program capable of accessing the
+            world\'s
+            nuclear codes that he developed for the National Security Agency, as Balder believes it
+            is too dangerous to exist. Lisbeth successfully retrieves Firefall from the NSA\'s
+            servers, attracting the attention of agent Edwin Needham, but is unable to unlock it,
+            and the program is later stolen from her by mercenaries led by Jan Holtser, who also
+            attempt to kill Lisbeth. When she doesn\'t attend their scheduled rendezvous, Balder
+            mistakenly believes Lisbeth decided to keep Firefall for herself and contacts Gabrielle
+            Grane, the deputy director of the Swedish Security Service (Säpo), who moves Balder and
+            his young son August to a safe-house. Meanwhile, Needham tracks the unauthorized login
+            to Stockholm and arrives to seek Lisbeth and Firefall.
+        </item>
+        <item>Clint Eastwood stars as Earl Stone, a man in his 80s who is broke, alone, and facing
+            foreclosure of his business when he is offered a job that simply requires him to drive.
+            Easy enough, but, unbeknownst to Earl, he\'s just signed on as a drug courier for a
+            Mexican cartel. He does well, so well, in fact, that his cargo increases exponentially,
+            and Earl is assigned a handler. But he isn\'t the only one keeping tabs on Earl; the
+            mysterious new drug mule has also hit the radar of hard-charging DEA agent Colin Bates.
+            And even as his money problems become a thing of the past, Earl\'s past mistakes start
+            to
+            weigh heavily on him, and it\'s uncertain if he\'ll have time to right those wrongs
+            before
+            law enforcement, or the cartel\'s enforcers, catch up to him."
+        </item>
+        <item>After a faulty interview with the Life Foundation ruins his career, former reporter
+            Eddie Brock\'s life is in pieces. Six months later, he comes across the Life Foundation
+            again, and he comes into contact with an alien symbiote and becomes Venom, a parasitic
+            antihero.
+        </item>
+    </string-array>
+
+    <string-array name="rating_movies">
+        <item>7,7</item>
+        <item>7,1</item>
+        <item>8,5</item>
+        <item>6,6</item>
+        <item>8,0</item>
+        <item>6,8</item>
+        <item>7,2</item>
+        <item>7,7</item>
+        <item>7,5</item>
+        <item>7,9</item>
+        <item>6,7</item>
+        <item>6,6</item>
+        <item>6,8</item>
+        <item>6,1</item>
+        <item>7,8</item>
+        <item>5,3</item>
+        <item>8,4</item>
+        <item>6,1</item>
+        <item>7,0</item>
+        <item>6,7</item>
+    </string-array>
+
+    <!-- Content TV Show -->
+    <integer-array name="poster_tvshows">
+        <item>@drawable/poster_a_star</item>
+        <item>@drawable/poster_aquaman</item>
+        <item>@drawable/poster_avengerinfinity</item>
+        <item>@drawable/poster_birdbox</item>
+        <item>@drawable/poster_bohemian</item>
+        <item>@drawable/poster_bumblebee</item>
+        <item>@drawable/poster_creed</item>
+        <item>@drawable/poster_deadpool</item>
+        <item>@drawable/poster_dragon</item>
+        <item>@drawable/poster_dragonball</item>
+        <item>@drawable/poster_glass</item>
+        <item>@drawable/poster_hunterkiller</item>
+        <item>@drawable/poster_marrypopins</item>
+        <item>@drawable/poster_mortalengine</item>
+        <item>@drawable/poster_preman</item>
+        <item>@drawable/poster_robinhood</item>
+        <item>@drawable/poster_spiderman</item>
+        <item>@drawable/poster_thegirl</item>
+        <item>@drawable/poster_themule</item>
+        <item>@drawable/poster_venom</item>
+    </integer-array>
+
+    <string-array name="title_tvshows">
+        <item>A Star is Born</item>
+        <item>Aquaman</item>
+        <item>Avengers Infinity War</item>
+        <item>BirdBox</item>
+        <item>Bohemian Rhapsody</item>
+        <item>BumbleBee</item>
+        <item>Creed II</item>
+        <item>DeadPool 2</item>
+        <item>How To Train Your Dragon The Hidden World</item>
+        <item>Dragon Ball Broly The Movie</item>
+        <item>Glass</item>
+        <item>Hunter Killer</item>
+        <item>Marry Poppins Returns</item>
+        <item>Mortal Engines</item>
+        <item>Preman Pensiun</item>
+        <item>Robin Hood</item>
+        <item>SpiderMan: Into The Spider Verse</item>
+        <item>The Girl In The Spider\'s Web</item>
+        <item>The Mule</item>
+        <item>Venom</item>
+    </string-array>
+
+    <string-array name="ph_tvshows">
+        <item>Warner Bros. Pictures</item>
+        <item>DC Entertainment</item>
+        <item>Marvel Studios</item>
+        <item>Netflix</item>
+        <item>GK Films</item>
+        <item>Hasbro</item>
+        <item>MGM Pictures, Warner Bros</item>
+        <item>20th Century Fox, Marvel</item>
+        <item>DreamWorks</item>
+        <item>Toei, Fox International</item>
+        <item>Universal Pictures</item>
+        <item>HK Productions</item>
+        <item>Walt Disney</item>
+        <item>MRC</item>
+        <item>MNC Pictures</item>
+        <item>Summit Entertainment</item>
+        <item>Sony, Columbia Pictures, Marvel</item>
+        <item>Columbia Pictures, MGM</item>
+        <item>Warner Bros</item>
+        <item>Columbia, Marvel</item>
+    </string-array>
+
+    <string-array name="storyline_tvshows">
+        <item>Seasoned musician Jackson Maine (Bradley Cooper) discovers-and falls in love
+            with-struggling artist Ally (Gaga). She has just about given up on her dream to make it
+            big as a singer - until Jack coaxes her into the spotlight. But even as Ally\'s career
+            takes off, the personal side of their relationship is breaking down, as Jack fights an
+            ongoing battle with his own internal demons.
+        </item>
+        <item>Arthur Curry, half human half from Atlantis, goes on a trip of a lifetime. Not only
+            does this adventure compel him to come to terms with his real identity, but it also
+            forces him to discover whether he is entirely worthy of fulfilling his own destiny:
+            becoming a king.
+        </item>
+        <item>As the Avengers and their allies have continued to protect the world from threats too
+            large for any one hero to handle, a new danger has emerged from the cosmic shadows:
+            Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity
+            Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all
+            of reality. Everything the Avengers have fought for has led up to this moment, the fate
+            of Earth and existence has never been more uncertain.
+        </item>
+        <item>In the wake of an unknown global terror, a mother must find the strength to flee with
+            her children down a treacherous river in search of safety. Due to unseen deadly forces,
+            the perilous journey must be made blindly. Directed by Emmy winner Susanne Bier, Bird
+            Box is a thriller starring Academy Award winner Sandra Bullock, John Malkovich, Sarah
+            Paulson, and Trevante Rhodes.
+        </item>
+        <item>Bohemian Rhapsody is a foot-stomping celebration of Queen, their music and their
+            extraordinary lead singer Freddie Mercury. Freddie defied stereotypes and shattered
+            convention to become one of the most beloved entertainers on the planet. The film traces
+            the meteoric rise of the band through their iconic songs and revolutionary sound. They
+            reach unparalleled success, but in an unexpected turn Freddie, surrounded by darker
+            influences, shuns Queen in pursuit of his solo career. Having suffered greatly without
+            the collaboration of Queen, Freddie manages to reunite with his bandmates just in time
+            for Live Aid. While bravely facing a recent AIDS diagnosis, Freddie leads the band in
+            one of the greatest performances in the history of rock music. Queen cements a legacy
+            that continues to inspire outsiders, dreamers and music lovers to this day.
+        </item>
+        <item>On Cybertron, the Autobots, led by Optimus Prime, are on the verge of losing the Great
+            Cybertronian War to their enemies, the Decepticons, and begin making preparations to
+            leave the planet. The Decepticons led by Shockwave, Soundwave and Starscream ambush them
+            during the evacuation, and Optimus sends a young scout, B-127, to Earth in order to set
+            up a base of operations where the Autobots can regroup. B-127 reaches Earth alone in
+            1987, crash-landing in California and disrupting a training exercise being conducted by
+            Sector 7, a secret government agency that monitors extraterrestrial activity on Earth.
+            Sector 7 agent Colonel Jack Burns presumes B-127 to be a hostile invader and attacks,
+            driving B-127 into the forest, where he is then ambushed by the Decepticon Blitzwing.
+            When B-127 refuses to reveal Optimus\' whereabouts, Blitzwing spitefully tears out his
+            voice-box and damages his memory core. B-127 manages to destroy Blitzwing before
+            collapsing from his wounds.
+        </item>
+        <item>Years after Adonis Creed made a name for himself under Rocky Balboa\'s mentorship, the
+            young boxer becomes the Heavyweight Champion of the World. While life is good with that
+            victory and his marriage to Bianca, trouble comes to Philadelphia when Ivan Drago, the
+            Russian boxer who killed Adonis\' father, Apollo, arrives with his son, Viktor, to
+            challenge Adonis. Against Rocky\'s advice, Adonis accepts the challenge without his
+            mentor\'s participation and pays the price in a punishing bout he wins only by a
+            technicality. Now injured and demoralized, Adonis cannot bring himself to back into the
+            game, leaving his spirit and title in jeopardy. Together, Adonis\' family and Rocky must
+            find a way to rekindle Adonis\' fighting spirit to face the future in whatever choice he
+            makes. Meanwhile, the Drago family have its own troubles trying to regain the respect in
+            their homeland that they lost at Rocky\'s hands as they wonder whether is it truly worth
+            it.
+        </item>
+        <item>After losing Vanessa (Morena Baccarin), the love of his life, 4th-wall breaking
+            mercenary Wade Wilson aka Deadpool (Ryan Reynolds) must assemble a team and protect a
+            young, full-figured mutant Russell Collins aka Firefist (Julian Dennison) from Cable
+            (Josh Brolin), a no-nonsense, dangerous cyborg from the future, and must also learn the
+            most important lesson of all: to be part of a family again.
+        </item>
+        <item>As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless\'
+            discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at
+            home and Hiccup\'s reign as village chief is tested, both dragon and rider must make
+            impossible decisions to save their kind.
+        </item>
+        <item>Goku and Vegeta encounter Broly, a Saiyan warrior unlike any fighter they\'ve faced
+            before.
+        </item>
+        <item>After pursuing Kevin Wendell Crumb and the multiple identities that reside within.
+            David Dunn finds himself locked in a mental hospital alongside his archenemy, Elijah
+            Price and must contend with a psychiatrist who is out to prove the trio do not actually
+            possess superhuman abilities
+        </item>
+        <item>A U.S. submarine, the USS Tampa Bay, vanishes while shadowing a Russian Akula-class
+            submarine in the Arctic. Rear Admiral John Fisk sends a Virginia-class submarine, the
+            USS Arkansas, under the command of newly-promoted and unorthodox Commander Joe Glass to
+            investigate. At the same time, a Navy SEAL team under the command of Lieutenant Bill
+            Beaman is sent in to discreetly observe a Russian naval base. When they arrive at the
+            naval base, they witness defense minister Dmitri Durov conducting a coup d\'etat and
+            taking Russian President Zakarin prisoner, and swiftly realize that Durov intends to
+            trigger a war.
+        </item>
+        <item>In Depression-era London, a now-grown Jane and Michael Banks, along with Michael\'s
+            three children, are visited by the enigmatic Mary Poppins following a personal loss.
+            Through her unique magical skills, and with the aid of her friend Jack, she helps the
+            family rediscover the joy and wonder missing in their lives.
+        </item>
+        <item>A mysterious young woman, Hester Shaw, emerges as the only one who can stop a giant,
+            predator city on wheels devouring everything in its path. Feral, and fiercely driven by
+            the memory of her mother, Hester joins forces with Tom Natsworthy, an outcast from
+            London, along with Anna Fang, a dangerous outlaw with a bounty on her head.
+        </item>
+        <item>After three years, the business of Muslihat, who has retired as a thug, has a problem.
+            Sales decline. Muslihat also faces new problems when Safira, her only daughter, grows up
+            in adolescence and begins to be visited by boys. A bigger problem: frictions between his
+            former subordinates.
+        </item>
+        <item>A war-hardened crusader Robin of Loxley (Taron Egerton) and his Moorish commander
+            (Jamie Foxx) mount an audacious revolt against the corrupt English crown.
+        </item>
+        <item>Miles Morales is a New York teen struggling with school, friends and, on top of that,
+            being the new Spider-Man. When he comes across Peter Parker, the erstwhile saviour of
+            New York, in the multiverse, Miles must train to become the new protector of his city.
+        </item>
+        <item>In Stockholm, Sweden, vigilante hacker Lisbeth Salander is hired by computer
+            programmer Frans Balder to retrieve Firefall, a program capable of accessing the
+            world\'s
+            nuclear codes that he developed for the National Security Agency, as Balder believes it
+            is too dangerous to exist. Lisbeth successfully retrieves Firefall from the NSA\'s
+            servers, attracting the attention of agent Edwin Needham, but is unable to unlock it,
+            and the program is later stolen from her by mercenaries led by Jan Holtser, who also
+            attempt to kill Lisbeth. When she doesn\'t attend their scheduled rendezvous, Balder
+            mistakenly believes Lisbeth decided to keep Firefall for herself and contacts Gabrielle
+            Grane, the deputy director of the Swedish Security Service (Säpo), who moves Balder and
+            his young son August to a safe-house. Meanwhile, Needham tracks the unauthorized login
+            to Stockholm and arrives to seek Lisbeth and Firefall.
+        </item>
+        <item>Clint Eastwood stars as Earl Stone, a man in his 80s who is broke, alone, and facing
+            foreclosure of his business when he is offered a job that simply requires him to drive.
+            Easy enough, but, unbeknownst to Earl, he\'s just signed on as a drug courier for a
+            Mexican cartel. He does well, so well, in fact, that his cargo increases exponentially,
+            and Earl is assigned a handler. But he isn\'t the only one keeping tabs on Earl; the
+            mysterious new drug mule has also hit the radar of hard-charging DEA agent Colin Bates.
+            And even as his money problems become a thing of the past, Earl\'s past mistakes start
+            to
+            weigh heavily on him, and it\'s uncertain if he\'ll have time to right those wrongs
+            before
+            law enforcement, or the cartel\'s enforcers, catch up to him."
+        </item>
+        <item>After a faulty interview with the Life Foundation ruins his career, former reporter
+            Eddie Brock\'s life is in pieces. Six months later, he comes across the Life Foundation
+            again, and he comes into contact with an alien symbiote and becomes Venom, a parasitic
+            antihero.
+        </item>
+    </string-array>
+
+    <string-array name="rating_tvshows">
+        <item>7,7</item>
+        <item>7,1</item>
+        <item>8,5</item>
+        <item>6,6</item>
+        <item>8,0</item>
+        <item>6,8</item>
+        <item>7,2</item>
+        <item>7,7</item>
+        <item>7,5</item>
+        <item>7,9</item>
+        <item>6,7</item>
+        <item>6,6</item>
+        <item>6,8</item>
+        <item>6,1</item>
+        <item>7,8</item>
+        <item>5,3</item>
+        <item>8,4</item>
+        <item>6,1</item>
+        <item>7,0</item>
+        <item>6,7</item>
+    </string-array>
+
+
 </resources>
