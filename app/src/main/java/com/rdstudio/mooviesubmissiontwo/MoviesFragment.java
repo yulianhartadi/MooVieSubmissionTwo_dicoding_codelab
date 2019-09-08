@@ -8,6 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
@@ -24,6 +27,7 @@ public class MoviesFragment extends Fragment {
     private String[] dataRatingMovie;
     private ArrayList<MovieTVModel> listMovie;
 
+
     public MoviesFragment() {
         // Required empty public constructor
     }
@@ -37,9 +41,22 @@ public class MoviesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_movies, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_movies, container, false);
 
+        // RecyclerView
+        RecyclerView rvMovie = rootView.findViewById(R.id.rv_fragment_movie);
+        rvMovie.setLayoutManager(new LinearLayoutManager(getActivity()));
+        rvMovie.setHasFixedSize(true);
 
+        initArrayContent();
+        addItemsMovieTv();
+
+        // Create & add Adapter
+        MovieAdapter movieAdapter = new MovieAdapter(listMovie);
+        rvMovie.setAdapter(movieAdapter);
+        rvMovie.setItemAnimator(new DefaultItemAnimator());
+
+        return rootView;
     }
 
     // Insert data to ArrayList that can be processed by adapter
@@ -56,6 +73,7 @@ public class MoviesFragment extends Fragment {
 
             listMovie.add(movie);
         }
+
 
     }
 
