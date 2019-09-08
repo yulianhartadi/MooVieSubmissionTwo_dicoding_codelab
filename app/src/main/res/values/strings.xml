@@ -16,6 +16,11 @@
         \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie.  Fusce quis mauris a enim sollicitudin
     </string>
     <string name="rating">rating</string>
+    <string name="more_info">More Info</string>
+    <string name="title_movie_trailer">Movie Trailer</string>
+    <string name="family">Family</string>
+    <string name="bookmarks">Bookmark</string>
+    <string name="tv_detail_title_storyline">Storyline</string>
 
     <!-- Content Movie -->
     <integer-array name="poster_movies">

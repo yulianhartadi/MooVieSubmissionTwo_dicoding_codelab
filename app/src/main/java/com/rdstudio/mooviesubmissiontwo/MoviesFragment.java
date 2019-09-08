@@ -1,6 +1,7 @@
 package com.rdstudio.mooviesubmissiontwo;
 
 
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -102,6 +103,9 @@ public class MoviesFragment extends Fragment {
     // Click to detail items movie
     private void showSelectedMovie(MovieTVModel movieTVModel){
         Toast.makeText(getActivity(), "detail to : " + movieTVModel.getTitleMovie(), Toast.LENGTH_SHORT).show();
+
+        Intent detailIntent = new Intent(getContext(), DetailMovieActivity.class);
+        startActivity(detailIntent);
 
     }
 

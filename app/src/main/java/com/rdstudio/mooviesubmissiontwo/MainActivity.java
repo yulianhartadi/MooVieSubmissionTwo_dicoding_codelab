@@ -135,8 +135,8 @@ public class MainActivity extends AppCompatActivity {
         Objects.requireNonNull(tabLayout.getTabAt(1)).setIcon(R.drawable.ic_live_tv);
 
         // Set icon color pre-selected
-        tabLayout.getTabAt(0).getIcon().setColorFilter(getResources().getColor(R.color.colorAccent), PorterDuff.Mode.SRC_IN);
-        tabLayout.getTabAt(1).getIcon().setColorFilter(getResources().getColor(R.color.cyan_800), PorterDuff.Mode.SRC_IN);
+        Objects.requireNonNull(tabLayout.getTabAt(0)).getIcon().setColorFilter(getResources().getColor(R.color.colorAccent), PorterDuff.Mode.SRC_IN);
+        Objects.requireNonNull(tabLayout.getTabAt(1)).getIcon().setColorFilter(getResources().getColor(R.color.cyan_800), PorterDuff.Mode.SRC_IN);
 
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override

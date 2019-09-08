@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_5"
+    android:fitsSystemWindows="true"
+    tools:context=".DetailMovieActivity">
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <ImageView
+        android:id="@+id/img_header"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="9:5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/poster_spiderman" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/overlay_dark_50"
+        app:layout_constraintDimensionRatio="9:5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_poster"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/img_header"
+        app:layout_constraintDimensionRatio="w, 2:3"
+        app:layout_constraintStart_toStartOf="@+id/guide_line_left"
+        app:layout_constraintTop_toBottomOf="@+id/img_header"
+        app:srcCompat="@drawable/poster_spiderman" />
+
+    <TextView
+        android:id="@+id/tv_detail_movie_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/title_movies"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintEnd_toStartOf="@+id/img_bookmark"
+        app:layout_constraintStart_toEndOf="@+id/img_poster"
+        app:layout_constraintTop_toBottomOf="@+id/img_header"
+        tools:text="Title Movies Here" />
+
+    <ImageButton
+        android:id="@+id/img_bookmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@null"
+        android:tint="@color/colorAccent"
+        app:layout_constraintEnd_toStartOf="@+id/guide_line_right"
+        app:layout_constraintTop_toBottomOf="@+id/img_header"
+        app:srcCompat="@drawable/ic_bookmark_border" />
+
+    <TextView
+        android:id="@+id/tv_detail_ph_movie"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/ph_movies"
+        app:layout_constraintEnd_toStartOf="@+id/guide_line_right"
+        app:layout_constraintStart_toStartOf="@+id/tv_detail_movie_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_movie_title"
+        tools:text="Production House Movie" />
+
+    <View
+        android:id="@+id/line_up"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="@id/guide_line_right"
+        app:layout_constraintStart_toStartOf="@id/guide_line_left"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_ph_movie" />
+
+
+    <View
+        android:id="@+id/line_down"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guide_line_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guide_line_left"
+        app:layout_constraintTop_toBottomOf="@+id/line_up"
+        app:layout_constraintVertical_bias="0.287" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_rating"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="normal"
+        app:layout_constraintEnd_toStartOf="@+id/fab_family_r"
+        app:layout_constraintStart_toStartOf="@+id/guide_line_left"
+        app:layout_constraintTop_toBottomOf="@+id/line_up"
+        app:srcCompat="@drawable/ic_star_white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_family_r"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="normal"
+        app:layout_constraintEnd_toStartOf="@+id/guide_line_right"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guide_line_left"
+        app:layout_constraintTop_toBottomOf="@+id/line_up"
+        app:srcCompat="@drawable/ic_people_white" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_bookmarks"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@android:color/white"
+        app:fabSize="normal"
+        app:layout_constraintEnd_toStartOf="@+id/guide_line_right"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fab_family_r"
+        app:layout_constraintTop_toBottomOf="@+id/line_up"
+        app:srcCompat="@drawable/ic_bookmark" />
+
+    <TextView
+        android:id="@+id/tv_detail_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rating"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/line_down"
+        app:layout_constraintEnd_toEndOf="@+id/fab_rating"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toStartOf="@+id/fab_rating"
+        app:layout_constraintTop_toBottomOf="@+id/fab_rating"
+        app:layout_constraintVertical_bias="0.08"
+        tools:text="@string/rating" />
+
+    <TextView
+        android:id="@+id/tv_detail_family"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/family"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/line_down"
+        app:layout_constraintEnd_toEndOf="@+id/fab_family_r"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fab_family_r"
+        app:layout_constraintTop_toBottomOf="@+id/fab_family_r"
+        app:layout_constraintVertical_bias="0.098"
+        tools:text="@string/family" />
+
+    <TextView
+        android:id="@+id/tv_detail_bookmarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bookmarks"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/line_down"
+        app:layout_constraintEnd_toEndOf="@+id/fab_bookmarks"
+        app:layout_constraintStart_toStartOf="@+id/fab_bookmarks"
+        app:layout_constraintTop_toBottomOf="@+id/fab_bookmarks"
+        app:layout_constraintVertical_bias="0.098"
+        tools:text="@string/bookmarks" />
+
+
+    <TextView
+        android:id="@+id/tv_detail_movie_storyline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_detail_title_storyline"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintBottom_toTopOf="@+id/tv_detail_storyline"
+        app:layout_constraintEnd_toStartOf="@+id/guide_line_right"
+        app:layout_constraintStart_toStartOf="@+id/guide_line_left"
+        app:layout_constraintTop_toBottomOf="@+id/line_down"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="@string/tv_detail_title_storyline" />
+
+    <TextView
+        android:id="@+id/tv_detail_storyline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/lorem_ipsum"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/guide_line_right"
+        app:layout_constraintStart_toStartOf="@+id/guide_line_left"
+        app:layout_constraintTop_toBottomOf="@+id/line_down"
+        app:layout_constraintVertical_bias="0.25"
+        tools:text="@string/lorem_ipsum" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
