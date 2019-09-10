@@ -54,7 +54,6 @@ public class MoviesFragment extends Fragment {
         addItemsMovieTv();
 
 
-
         // Create & add Adapter
         MovieAdapter movieAdapter = new MovieAdapter(listMovie);
         rvMovie.setAdapter(movieAdapter);
@@ -101,10 +100,19 @@ public class MoviesFragment extends Fragment {
     }
 
     // Click to detail items movie
-    private void showSelectedMovie(MovieTVModel movieTVModel){
+    private void showSelectedMovie(MovieTVModel movieTVModel) {
         Toast.makeText(getActivity(), "detail to : " + movieTVModel.getTitleMovie(), Toast.LENGTH_SHORT).show();
 
+        //data to detail
+        MovieTVModel dataMovie = new MovieTVModel();
+        dataMovie.setPosterMovie(movieTVModel.getPosterMovie());
+        dataMovie.setTitleMovie(movieTVModel.getTitleMovie());
+        dataMovie.setPhMovie(movieTVModel.getPhMovie());
+        dataMovie.setRatingMovie(movieTVModel.getRatingMovie());
+        dataMovie.setStorylineMovie(movieTVModel.getStorylineMovie());
+
         Intent detailIntent = new Intent(getContext(), DetailMovieActivity.class);
+        detailIntent.putExtra(DetailMovieActivity.MOVIE_DETAIL, dataMovie);
         startActivity(detailIntent);
 
     }
