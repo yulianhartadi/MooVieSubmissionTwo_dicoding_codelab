@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> {
 
-    private ArrayList<MovieTVModel> listMovie;
+    private ArrayList<Movie> listMovie;
 
     // interface onItemClickCallBack
     private OnItemClickCallBack onItemClickCallBack;
@@ -26,7 +26,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         this.onItemClickCallBack = onItemClickCallBack;
     }
 
-    public MovieAdapter(ArrayList<MovieTVModel> listMovie) {
+    public MovieAdapter(ArrayList<Movie> listMovie) {
         this.listMovie = listMovie;
     }
 
@@ -39,7 +39,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder holder, final int position) {
-        MovieTVModel movie = listMovie.get(position);
+        Movie movie = listMovie.get(position);
 
         Glide.with(holder.itemView.getContext())
                 .load(movie.getPosterMovie())
@@ -84,7 +84,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
     // Interface parameter onClickItem
     public interface OnItemClickCallBack{
-        void onItemClicked(MovieTVModel data);
+        void onItemClicked(Movie data);
     }
 
 }

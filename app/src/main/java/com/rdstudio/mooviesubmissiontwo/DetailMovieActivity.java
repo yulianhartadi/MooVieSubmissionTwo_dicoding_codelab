@@ -10,11 +10,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class DetailMovieActivity extends AppCompatActivity {
 
-    public static String MOVIE_DETAIL = "movie_deail";
+    public static String MOVIE_DETAIL = "movie_detail";
 
     ImageView imgPoster, imgHeader, imgBookmarks;
     TextView tvDetailMovieTitle, tvDetailPhMovie, tvDetailRating, tvStoryline;
@@ -34,7 +33,7 @@ public class DetailMovieActivity extends AppCompatActivity {
         tvStoryline = findViewById(R.id.tv_detail_storyline);
         imgBookmarks = findViewById(R.id.img_bookmark);
 
-        final MovieTVModel dataMovie = getIntent().getParcelableExtra(MOVIE_DETAIL);
+        final Movie dataMovie = getIntent().getParcelableExtra(MOVIE_DETAIL);
 
         // insert image header
         if (dataMovie != null) {

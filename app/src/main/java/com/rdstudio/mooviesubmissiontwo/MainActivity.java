@@ -1,14 +1,13 @@
 package com.rdstudio.mooviesubmissiontwo;
 
-import android.app.AlertDialog;
 import android.app.SearchManager;
 import android.content.Context;
-import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -20,30 +19,20 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String[] LANGUAGE = new String[]{
-            "English", "Indonesia"
-    };
-    private View parent_view;
-
-    private ViewPager viewPager;
     private SectionsPagerAdapter viewPagerAdapter;
-    private TabLayout tabLayout;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        parent_view = findViewById(android.R.id.content);
+
 
         initToolbar();
         initContent();
@@ -92,41 +81,18 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.choose_language) {
             // Choose Language menu
-            showOptionLanguage();
+            //showOptionLanguage();
+            Intent mIntent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+            startActivity(mIntent);
         }
-        return true;
-    }
-
-    // Dialog Language Option
-    private String language_selected;
-
-    private void showOptionLanguage() {
-        language_selected = LANGUAGE[0];
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle(getText(R.string.choose_language));
-        builder.setSingleChoiceItems(LANGUAGE, 0, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                language_selected = LANGUAGE[i];
-            }
-        });
-
-        builder.setPositiveButton(R.string.OK, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                Snackbar.make(parent_view, "selected : " + language_selected, Snackbar.LENGTH_SHORT).show();
-            }
-        });
-
-        builder.setNegativeButton(R.string.CANCEL, null);
-        builder.show();
+        return super.onOptionsItemSelected(item);
     }
 
     // Content
     private void initContent() {
         // Tabs
-        viewPager = findViewById(R.id.main_view_pager);
-        tabLayout =findViewById(R.id.main_tab_layout);
+        ViewPager viewPager = findViewById(R.id.main_view_pager);
+        TabLayout tabLayout = findViewById(R.id.main_tab_layout);
         setupViewPager(viewPager);
 
         tabLayout.setupWithViewPager(viewPager);
@@ -135,14 +101,14 @@ public class MainActivity extends AppCompatActivity {
         Objects.requireNonNull(tabLayout.getTabAt(1)).setIcon(R.drawable.ic_live_tv);
 
         // Set icon color pre-selected
-        Objects.requireNonNull(tabLayout.getTabAt(0)).getIcon().setColorFilter(getResources().getColor(R.color.colorAccent), PorterDuff.Mode.SRC_IN);
-        Objects.requireNonNull(tabLayout.getTabAt(1)).getIcon().setColorFilter(getResources().getColor(R.color.cyan_800), PorterDuff.Mode.SRC_IN);
+        Objects.requireNonNull(Objects.requireNonNull(tabLayout.getTabAt(0)).getIcon()).setColorFilter(getResources().getColor(R.color.colorAccent), PorterDuff.Mode.SRC_IN);
+        Objects.requireNonNull(Objects.requireNonNull(tabLayout.getTabAt(1)).getIcon()).setColorFilter(getResources().getColor(R.color.cyan_800), PorterDuff.Mode.SRC_IN);
 
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 //getSupportActionBar().setTitle(viewPagerAdapter.getTitle(tab.getPosition()));
-                tab.getIcon().setColorFilter(getResources().getColor(R.color.colorAccent), PorterDuff.Mode.SRC_IN);
+                Objects.requireNonNull(tab.getIcon()).setColorFilter(getResources().getColor(R.color.colorAccent), PorterDuff.Mode.SRC_IN);
             }
 
             @Override
@@ -160,40 +126,41 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         viewPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
-        viewPagerAdapter.addFragment(MoviesFragment.newInstance(), "Movies");       // index 0
-        viewPagerAdapter.addFragment(TVShowsFragment.newInstance(), "TV Show");     // index 1
         viewPager.setAdapter(viewPagerAdapter);
 
     }
 
     private class SectionsPagerAdapter extends FragmentPagerAdapter {
 
-        private final List<Fragment> mFragmentList = new ArrayList<>();
-        private final List<String> mFragmentTitleList = new ArrayList<>();
-
-        public SectionsPagerAdapter(@NonNull FragmentManager manager) {
+        private SectionsPagerAdapter(@NonNull FragmentManager manager) {
             super(Objects.requireNonNull(manager));
         }
 
         @NonNull
         @Override
         public Fragment getItem(int position) {
-            return mFragmentList.get(position);
+            // switch tab for each fragment
+            switch (position) {
+                case 0:
+                    return new MoviesFragment();
+                case 1:
+                    return new TVFragment();
+            }
+
+            return null;
         }
 
         @Override
         public int getCount() {
-            return mFragmentList.size();
+            return 2;
         }
 
-        public void addFragment(Fragment fragment, String title){
-            mFragmentList.add(fragment);
-            mFragmentTitleList.add(title);
-        }
 
         @Override
         public CharSequence getPageTitle(int position) {
-            return null;
+            //String title = getItem(position).getClass().getName();
+            //return title.subSequence(title.lastIndexOf(".") + 1, title.length());
+             return null;
         }
 
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/list_row_movie"
+    android:id="@+id/list_row_tv"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="top"
@@ -9,8 +9,7 @@
     android:orientation="horizontal"
     android:padding="@dimen/activity_horizontal_margin">
 
-    <!-- Thumb Poster Movie -->
-
+    <!-- thumb tv poster -->
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_poster_movie"
         android:layout_width="110dp"
@@ -19,12 +18,12 @@
         app:cardElevation="5dp">
 
         <ImageView
-            android:id="@+id/iv_poster_movie"
+            android:id="@+id/img_poster_tvshow"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="fitXY"
             android:contentDescription="@null"
-            android:src="@drawable/poster_bumblebee" />
+            android:src="@drawable/tv_the_100" />
 
     </androidx.cardview.widget.CardView>
 
@@ -34,7 +33,7 @@
         android:layout_height="0dp"
         android:layout_toEndOf="@+id/cv_poster_movie" />
 
-    <!-- info movie -->
+    <!-- info tv show -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -44,18 +43,18 @@
 
         <!-- Title -->
         <TextView
-            android:id="@+id/tv_movie_title"
+            android:id="@+id/tv_tvshow_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:maxLines="2"
-            android:text="@string/title_movies"
+            android:text="@string/title_tvshow"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             android:textColor="@color/grey_80"
             android:textStyle="bold" />
 
         <!-- Ph Movie -->
         <TextView
-            android:id="@+id/tv_ph_movie"
+            android:id="@+id/tv_ph_tvshow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_medium"
@@ -65,7 +64,7 @@
 
         <!-- Short Storyline -->
         <TextView
-            android:id="@+id/tv_movie_storyline"
+            android:id="@+id/tv_tvshow_storyline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_medium"
@@ -97,7 +96,7 @@
                 android:tint="@color/grey_800" />
 
             <TextView
-                android:id="@+id/tv_movie_rating"
+                android:id="@+id/tv_tvshow_rating"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/spacing_medium"

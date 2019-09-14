@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -22,26 +24,39 @@ import java.util.ArrayList;
  */
 public class MoviesFragment extends Fragment {
 
+    private int someStateValue;
+    private final String SOME_VALUE_KEY = "someValueToSave";
+
     private TypedArray dataPosterMovie;
     private String[] dataTitleMovie;
     private String[] dataPhMovie;
     private String[] dataStorylineMovie;
     private String[] dataRatingMovie;
-    private ArrayList<MovieTVModel> listMovie;
+    private ArrayList<Movie> listMovie;
 
 
     public MoviesFragment() {
         // Required empty public constructor
     }
 
-    public static MoviesFragment newInstance() {
+    static MoviesFragment newInstance() {
         return new MoviesFragment();
     }
 
 
+    @NonNull
+    @Override
+    public LayoutInflater onGetLayoutInflater(@Nullable Bundle savedInstanceState) {
+        assert savedInstanceState != null;
+        savedInstanceState.putInt(SOME_VALUE_KEY, someStateValue);
+        return super.onGetLayoutInflater(savedInstanceState);
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_movies, container, false);
 
@@ -53,7 +68,6 @@ public class MoviesFragment extends Fragment {
         initArrayContent();
         addItemsMovieTv();
 
-
         // Create & add Adapter
         MovieAdapter movieAdapter = new MovieAdapter(listMovie);
         rvMovie.setAdapter(movieAdapter);
@@ -62,7 +76,7 @@ public class MoviesFragment extends Fragment {
         // onClickListener to detail movie items
         movieAdapter.setOnItemClickCallBack(new MovieAdapter.OnItemClickCallBack() {
             @Override
-            public void onItemClicked(MovieTVModel data) {
+            public void onItemClicked(Movie data) {
                 showSelectedMovie(data);
             }
         });
@@ -76,7 +90,7 @@ public class MoviesFragment extends Fragment {
         listMovie = new ArrayList<>();
 
         for (int i = 0; i < dataTitleMovie.length; i++) {
-            MovieTVModel movie = new MovieTVModel();
+            Movie movie = new Movie();
             movie.setPosterMovie(dataPosterMovie.getResourceId(i, -1));
             movie.setTitleMovie(dataTitleMovie[i]);
             movie.setPhMovie(dataPhMovie[i]);
@@ -100,16 +114,16 @@ public class MoviesFragment extends Fragment {
     }
 
     // Click to detail items movie
-    private void showSelectedMovie(MovieTVModel movieTVModel) {
-        Toast.makeText(getActivity(), "detail to : " + movieTVModel.getTitleMovie(), Toast.LENGTH_SHORT).show();
+    private void showSelectedMovie(Movie movie) {
+        Toast.makeText(getActivity(), "detail to : " + movie.getTitleMovie(), Toast.LENGTH_SHORT).show();
 
         //data to detail
-        MovieTVModel dataMovie = new MovieTVModel();
-        dataMovie.setPosterMovie(movieTVModel.getPosterMovie());
-        dataMovie.setTitleMovie(movieTVModel.getTitleMovie());
-        dataMovie.setPhMovie(movieTVModel.getPhMovie());
-        dataMovie.setRatingMovie(movieTVModel.getRatingMovie());
-        dataMovie.setStorylineMovie(movieTVModel.getStorylineMovie());
+        Movie dataMovie = new Movie();
+        dataMovie.setPosterMovie(movie.getPosterMovie());
+        dataMovie.setTitleMovie(movie.getTitleMovie());
+        dataMovie.setPhMovie(movie.getPhMovie());
+        dataMovie.setRatingMovie(movie.getRatingMovie());
+        dataMovie.setStorylineMovie(movie.getStorylineMovie());
 
         Intent detailIntent = new Intent(getContext(), DetailMovieActivity.class);
         detailIntent.putExtra(DetailMovieActivity.MOVIE_DETAIL, dataMovie);

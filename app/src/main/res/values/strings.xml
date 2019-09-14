@@ -1,12 +1,8 @@
 <resources>
     <string name="app_name">MooVie</string>
-    <string name="action_settings">Settings</string>
     <string name="search">search</string>
     <string name="choose_language">Language</string>
     <string name="search_hint">eg: movie title</string>
-    <string name="action_about">about</string>
-    <string name="OK">OK</string>
-    <string name="CANCEL">CANCEL</string>
 
     <!-- Movie Thumbnail Content -->
     <string name="title_movies">Title Movie</string>
@@ -17,7 +13,6 @@
     </string>
     <string name="rating">rating</string>
     <string name="more_info">More Info</string>
-    <string name="title_movie_trailer">Movie Trailer</string>
     <string name="family">Family</string>
     <string name="bookmarks">Bookmark</string>
     <string name="tv_detail_title_storyline">Storyline</string>
@@ -261,72 +256,72 @@
 
     <!-- Content TV Show -->
     <integer-array name="poster_tvshows">
-        <item>@drawable/poster_a_star</item>
-        <item>@drawable/poster_aquaman</item>
-        <item>@drawable/poster_avengerinfinity</item>
-        <item>@drawable/poster_birdbox</item>
-        <item>@drawable/poster_bohemian</item>
-        <item>@drawable/poster_bumblebee</item>
-        <item>@drawable/poster_creed</item>
-        <item>@drawable/poster_deadpool</item>
-        <item>@drawable/poster_dragon</item>
-        <item>@drawable/poster_dragonball</item>
-        <item>@drawable/poster_glass</item>
-        <item>@drawable/poster_hunterkiller</item>
-        <item>@drawable/poster_marrypopins</item>
-        <item>@drawable/poster_mortalengine</item>
-        <item>@drawable/poster_preman</item>
-        <item>@drawable/poster_robinhood</item>
-        <item>@drawable/poster_spiderman</item>
-        <item>@drawable/poster_thegirl</item>
-        <item>@drawable/poster_themule</item>
-        <item>@drawable/poster_venom</item>
+        <item>@drawable/tv_arrow</item>
+        <item>@drawable/tv_blowing_up_history</item>
+        <item>@drawable/tv_carnival_row</item>
+        <item>@drawable/tv_family_guy</item>
+        <item>@drawable/tv_flash</item>
+        <item>@drawable/tv_greys_anatomi</item>
+        <item>@drawable/tv_penny_worth</item>
+        <item>@drawable/tv_supernatural</item>
+        <item>@drawable/tv_the_simpsons</item>
+        <item>@drawable/tv_titans</item>
+        <item>@drawable/tv_walking_dead</item>
+        <item>@drawable/tv_agent_of_shields</item>
+        <item>@drawable/tv_naruto_shipuden</item>
+        <item>@drawable/tv_south_park</item>
+        <item>@drawable/tv_lucifer</item>
+        <item>@drawable/tv_the_boys</item>
+        <item>@drawable/tv_the_100</item>
+        <item>@drawable/tv_got</item>
+        <item>@drawable/tv_law_and_order_svu</item>
+        <item>@drawable/tv_the_deadly_sins</item>
     </integer-array>
 
     <string-array name="title_tvshows">
-        <item>A Star is Born</item>
-        <item>Aquaman</item>
-        <item>Avengers Infinity War</item>
-        <item>BirdBox</item>
-        <item>Bohemian Rhapsody</item>
-        <item>BumbleBee</item>
-        <item>Creed II</item>
-        <item>DeadPool 2</item>
-        <item>How To Train Your Dragon The Hidden World</item>
-        <item>Dragon Ball Broly The Movie</item>
-        <item>Glass</item>
-        <item>Hunter Killer</item>
-        <item>Marry Poppins Returns</item>
-        <item>Mortal Engines</item>
-        <item>Preman Pensiun</item>
-        <item>Robin Hood</item>
-        <item>SpiderMan: Into The Spider Verse</item>
-        <item>The Girl In The Spider\'s Web</item>
-        <item>The Mule</item>
-        <item>Venom</item>
+        <item>Arrow</item>
+        <item>Blowing Up History</item>
+        <item>Carnival Row</item>
+        <item>Family Guy</item>
+        <item>The Flash</item>
+        <item>Greys Anatomy</item>
+        <item>Penny Worth</item>
+        <item>Supernatural</item>
+        <item>The Simpsons</item>
+        <item>The Titans</item>
+        <item>The Walking Dead</item>
+        <item>Agent of S.H.I.E.L.D.S</item>
+        <item>Naruto Shippuden</item>
+        <item>South Park</item>
+        <item>Lucifer</item>
+        <item>The Boys</item>
+        <item>The 100</item>
+        <item>Game of Thrones</item>
+        <item>Law and Order Special Victims Unit</item>
+        <item>The Deadly Sins</item>
     </string-array>
 
     <string-array name="ph_tvshows">
-        <item>Warner Bros. Pictures</item>
-        <item>DC Entertainment</item>
-        <item>Marvel Studios</item>
-        <item>Netflix</item>
-        <item>GK Films</item>
-        <item>Hasbro</item>
-        <item>MGM Pictures, Warner Bros</item>
-        <item>20th Century Fox, Marvel</item>
-        <item>DreamWorks</item>
-        <item>Toei, Fox International</item>
-        <item>Universal Pictures</item>
-        <item>HK Productions</item>
-        <item>Walt Disney</item>
-        <item>MRC</item>
-        <item>MNC Pictures</item>
-        <item>Summit Entertainment</item>
-        <item>Sony, Columbia Pictures, Marvel</item>
-        <item>Columbia Pictures, MGM</item>
-        <item>Warner Bros</item>
-        <item>Columbia, Marvel</item>
+        <item>Amazon Network</item>
+        <item>Fox, Netflix</item>
+        <item>HBO</item>
+        <item>NBC</item>
+        <item>DC Universe</item>
+        <item>MBS</item>
+        <item>Comedy Central</item>
+        <item>ABC</item>
+        <item>Amazon Networks</item>
+        <item>Amazon Network</item>
+        <item>Fox, Netflix</item>
+        <item>HBO</item>
+        <item>NBC</item>
+        <item>DC Universe</item>
+        <item>MBS</item>
+        <item>Comedy Central</item>
+        <item>ABC</item>
+        <item>Amazon Networks</item>
+        <item>Amazon Network</item>
+        <item>Fox, Netflix</item>
     </string-array>
 
     <string-array name="storyline_tvshows">
@@ -495,6 +490,9 @@
         <item>7,0</item>
         <item>6,7</item>
     </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_tvshow">Title TVShow</string>
 
 
 </resources>

@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -56,7 +55,7 @@
         app:srcCompat="@drawable/poster_spiderman" />
 
     <TextView
-        android:id="@+id/tv_detail_movie_title"
+        android:id="@+id/tv_detail_tvshow_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -81,14 +80,14 @@
         app:srcCompat="@drawable/ic_bookmark_border" />
 
     <TextView
-        android:id="@+id/tv_detail_ph_movie"
+        android:id="@+id/tv_detail_ph_tvshow"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/ph_movies"
         app:layout_constraintEnd_toStartOf="@+id/guide_line_right"
-        app:layout_constraintStart_toStartOf="@+id/tv_detail_movie_title"
-        app:layout_constraintTop_toBottomOf="@+id/tv_detail_movie_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_detail_tvshow_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_tvshow_title"
         tools:text="Production House Movie" />
 
     <View
@@ -99,7 +98,7 @@
         android:background="@android:color/darker_gray"
         app:layout_constraintEnd_toEndOf="@id/guide_line_right"
         app:layout_constraintStart_toStartOf="@id/guide_line_left"
-        app:layout_constraintTop_toBottomOf="@+id/tv_detail_ph_movie" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_ph_tvshow" />
 
 
     <View
@@ -158,7 +157,7 @@
         app:srcCompat="@drawable/ic_bookmark" />
 
     <TextView
-        android:id="@+id/tv_detail_rating"
+        android:id="@+id/tv_detail_rating_tv_show"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/rating"
@@ -200,7 +199,7 @@
 
 
     <TextView
-        android:id="@+id/tv_detail_movie_storyline"
+        android:id="@+id/tv_detail_tvshow_storyline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -212,7 +211,7 @@
         tools:text="@string/tv_detail_title_storyline" />
 
     <TextView
-        android:id="@+id/tv_detail_storyline"
+        android:id="@+id/tv_detail_storyline_tv_show"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -220,7 +219,7 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/guide_line_right"
         app:layout_constraintStart_toStartOf="@+id/guide_line_left"
-        app:layout_constraintTop_toBottomOf="@+id/tv_detail_movie_storyline"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_tvshow_storyline"
         tools:text="@string/lorem_ipsum" />
 
 

@@ -1,0 +1,498 @@
+<resources>
+    <string name="app_name">MooVie</string>
+    <string name="search">cari</string>
+    <string name="choose_language">Bahasa</string>
+    <string name="search_hint">eg: judul film</string>
+
+    <!-- Movie Thumbnail Content -->
+    <string name="title_movies">Judul Film</string>
+    <string name="ph_movies">Rumah Produksi</string>
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie.  Fusce quis mauris a enim sollicitudin
+        \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie.  Fusce quis mauris a enim sollicitudin
+    </string>
+    <string name="rating">rating</string>
+    <string name="more_info">Detail</string>
+    <string name="family">Keluarga</string>
+    <string name="bookmarks">Favorit</string>
+    <string name="tv_detail_title_storyline">Jalan Cerita</string>
+
+    <!-- Content Movie -->
+    <integer-array name="poster_movies">
+        <item>@drawable/poster_a_star</item>
+        <item>@drawable/poster_aquaman</item>
+        <item>@drawable/poster_avengerinfinity</item>
+        <item>@drawable/poster_birdbox</item>
+        <item>@drawable/poster_bohemian</item>
+        <item>@drawable/poster_bumblebee</item>
+        <item>@drawable/poster_creed</item>
+        <item>@drawable/poster_deadpool</item>
+        <item>@drawable/poster_dragon</item>
+        <item>@drawable/poster_dragonball</item>
+        <item>@drawable/poster_glass</item>
+        <item>@drawable/poster_hunterkiller</item>
+        <item>@drawable/poster_marrypopins</item>
+        <item>@drawable/poster_mortalengine</item>
+        <item>@drawable/poster_preman</item>
+        <item>@drawable/poster_robinhood</item>
+        <item>@drawable/poster_spiderman</item>
+        <item>@drawable/poster_thegirl</item>
+        <item>@drawable/poster_themule</item>
+        <item>@drawable/poster_venom</item>
+    </integer-array>
+
+    <string-array name="title_movies">
+        <item>A Star is Born</item>
+        <item>Aquaman</item>
+        <item>Avengers Infinity War</item>
+        <item>BirdBox</item>
+        <item>Bohemian Rhapsody</item>
+        <item>BumbleBee</item>
+        <item>Creed II</item>
+        <item>DeadPool 2</item>
+        <item>How To Train Your Dragon The Hidden World</item>
+        <item>Dragon Ball Broly The Movie</item>
+        <item>Glass</item>
+        <item>Hunter Killer</item>
+        <item>Marry Poppins Returns</item>
+        <item>Mortal Engines</item>
+        <item>Preman Pensiun</item>
+        <item>Robin Hood</item>
+        <item>SpiderMan: Into The Spider Verse</item>
+        <item>The Girl In The Spider\'s Web</item>
+        <item>The Mule</item>
+        <item>Venom</item>
+    </string-array>
+
+    <string-array name="ph_movies">
+        <item>Warner Bros. Pictures</item>
+        <item>DC Entertainment</item>
+        <item>Marvel Studios</item>
+        <item>Netflix</item>
+        <item>GK Films</item>
+        <item>Hasbro</item>
+        <item>MGM Pictures, Warner Bros</item>
+        <item>20th Century Fox, Marvel</item>
+        <item>DreamWorks</item>
+        <item>Toei, Fox International</item>
+        <item>Universal Pictures</item>
+        <item>HK Productions</item>
+        <item>Walt Disney</item>
+        <item>MRC</item>
+        <item>MNC Pictures</item>
+        <item>Summit Entertainment</item>
+        <item>Sony, Columbia Pictures, Marvel</item>
+        <item>Columbia Pictures, MGM</item>
+        <item>Warner Bros</item>
+        <item>Columbia, Marvel</item>
+    </string-array>
+
+    <string-array name="storyline_movies">
+        <item>Musisi kawakan Jackson Maine (Bradley Cooper) menemukan-dan jatuh cinta
+             dengan artis yang sedang berjuang Ally (Gaga). Dia baru saja menyerah pada mimpinya untuk berhasil
+             sebesar penyanyi - sampai Jack membujuknya menjadi sorotan. Tetapi bahkan sebagai karier Ally
+             lepas landas, sisi pribadi hubungan mereka rusak, seperti Jack berkelahi
+             pertempuran yang sedang berlangsung dengan setan internalnya sendiri.
+        </item>
+        <item>Arthur Curry, setengah manusia dari Atlantis, melakukan perjalanan seumur hidup. Tidak hanya
+             apakah petualangan ini memaksanya untuk berdamai dengan identitas aslinya, tetapi juga
+             memaksanya untuk menemukan apakah dia sepenuhnya layak memenuhi takdirnya sendiri:
+             menjadi raja.
+        </item>
+        <item>Sebagai Avengers dan sekutu mereka terus melindungi dunia dari ancaman juga
+             besar untuk ditangani oleh satu pahlawan, bahaya baru telah muncul dari bayang-bayang kosmik:
+             Terima kasih. Seorang lalim penghinaan intergalaksi, tujuannya adalah untuk mengumpulkan semua enam Infinity
+             Batu, artefak dari kekuatan yang tak terbayangkan, dan menggunakannya untuk menimbulkan keinginan bengkok pada semuanya
+             realitas. Segala yang Avengers telah perjuangkan telah mengarah ke saat ini, nasib
+             Bumi dan keberadaan tidak pernah lebih pasti.
+        </item>
+        <item>In the wake of an unknown global terror, a mother must find the strength to flee with
+            her children down a treacherous river in search of safety. Due to unseen deadly forces,
+            the perilous journey must be made blindly. Directed by Emmy winner Susanne Bier, Bird
+            Box is a thriller starring Academy Award winner Sandra Bullock, John Malkovich, Sarah
+            Paulson, and Trevante Rhodes.
+        </item>
+        <item>Dalam bangun dari teror global yang tidak diketahui, seorang ibu harus menemukan kekuatan untuk melarikan diri
+             anak-anaknya menyusuri sungai berbahaya untuk mencari keselamatan. Karena kekuatan mematikan yang tak terlihat,
+             perjalanan berbahaya harus dilakukan secara membabi buta. Disutradarai oleh pemenang Emmy Susanne Bier, Bird
+             Box adalah film thriller yang dibintangi oleh pemenang Penghargaan Academy, Sandra Bullock, John Malkovich, Sarah
+             Paulson, dan Trevante Rhodes.
+        </item>
+        <item>Di Cybertron, Autobots, yang dipimpin oleh Optimus Prime, hampir kehilangan Great
+            Perang Cybertronian ke musuh-musuh mereka, Decepticons, dan mulai membuat persiapan untuk
+            tinggalkan planet ini. Decepticons yang dipimpin oleh Shockwave, Soundwave dan Starscream menyergap mereka
+            selama evakuasi, dan Optimus mengirimkan pengintai muda, B-127, ke Bumi untuk mengatur
+            sebuah basis operasi di mana Autobots dapat berkumpul kembali. B-127 mencapai Bumi sendirian di
+            1987, crash-landing di California dan mengganggu latihan yang sedang dilakukan oleh
+            Sektor 7, sebuah agen rahasia pemerintah yang memantau aktivitas luar angkasa di Bumi.
+            Agen Sektor 7 Kolonel Jack Burns menganggap B-127 sebagai penyerang dan serangan yang bermusuhan,
+            mengendarai B-127 ke hutan, di mana ia kemudian disergap oleh Decepticon Blitzwing.
+            Ketika B-127 menolak untuk mengungkapkan keberadaan Optimus, Blitzwing dengan dengki mengeluarkannya
+            kotak suara dan merusak inti memorinya. B-127 berhasil menghancurkan Blitzwing sebelumnya
+            pingsan karena lukanya.
+        </item>
+        <item>Bertahun-tahun setelah Adonis Creed membuat nama untuk dirinya sendiri di bawah bimbingan Rocky Balboa, the
+            petinju muda menjadi Juara Kelas Berat Dunia. Sementara hidup itu baik dengan itu
+            Kemenangan dan pernikahannya dengan Bianca, masalah datang ke Philadelphia ketika Ivan Drago, yang
+            Petinju Rusia yang membunuh ayah Adonis, Apollo, tiba bersama putranya, Viktor, untuk
+            tantang Adonis. Terhadap saran Rocky, Adonis menerima tantangan tanpa itu
+            partisipasi mentor dan membayar harga dalam pertarungan hukuman dia hanya menang dengan a
+            teknis. Sekarang terluka dan kehilangan semangat, Adonis tidak dapat membawa dirinya kembali ke
+            game, meninggalkan semangat dan gelarnya dalam bahaya. Bersama-sama, keluarga Adonis dan Rocky harus
+            menemukan cara untuk menyalakan kembali semangat juang Adonis untuk menghadapi masa depan dalam pilihan apa pun yang dia
+            membuat. Sementara itu, keluarga Drago memiliki masalah sendiri dalam mencoba mendapatkan kembali rasa hormat di
+            tanah air mereka bahwa mereka kehilangan di tangan Rocky ketika mereka bertanya-tanya apakah itu benar-benar layak.
+        </item>
+        <item>Setelah kehilangan Vanessa (Morena Baccarin), cinta dalam hidupnya, Ttentara bayaran Wade Wilson
+            alias Deadpool (Ryan Reynolds) harus membentuk tim dan melindungi a
+             muda, mutan lengkap Russell Collins alias Firefist (Julian Dennison) dari Cable
+             (Josh Brolin), cyborg yang tidak masuk akal, berbahaya dari masa depan, dan juga harus belajar
+             pelajaran terpenting: menjadi bagian dari keluarga lagi.
+        </item>
+        <item>Saat Hiccup memenuhi mimpinya untuk menciptakan utopia naga yang damai, Toothless
+             Penemuan pasangan yang liar dan sulit ditangkap menarik Night Fury pergi. Saat bahaya meningkat
+             rumah dan pemerintahan Hiccup sebagai kepala desa diuji, baik naga dan pengendara harus membuat
+             keputusan mustahil untuk menyelamatkan jenis mereka.
+        </item>
+        <item>Goku dan Vegeta bertemu Broly, seorang prajurit Saiyan tidak seperti petarung yang pernah mereka hadapi
+             sebelumnya.
+        </item>
+        <item> Setelah mengejar Kevin Wendell Crumb dan beberapa identitas yang ada di dalamnya.
+            David Dunn menemukan dirinya terkunci di rumah sakit jiwa bersama musuh bebuyutannya, Elia
+            Harga dan harus bersaing dengan psikiater yang keluar untuk membuktikan trio tidak benar-benar
+            memiliki kemampuan manusia super
+        </item>
+                
+        <item> Kapal selam A.S., USS Tampa Bay, menghilang saat membayangi kelas Akula Rusia
+            kapal selam di Kutub Utara. Laksamana Muda John Fisk mengirim kapal selam kelas Virginia, yang
+            USS Arkansas, di bawah komando Komandan Joe Glass yang baru dipromosikan dan tidak ortodoks
+            menyelidiki. Pada saat yang sama, tim Navy SEAL di bawah komando Letnan Bill
+            Beaman dikirim untuk secara diam-diam mengamati pangkalan angkatan laut Rusia. Ketika mereka tiba di
+            pangkalan angkatan laut, mereka menyaksikan menteri pertahanan Dmitri Durov melakukan kudeta dan
+            membawa tahanan Presiden Rusia Zakarin, dan dengan cepat menyadari bahwa Durov bermaksud
+            memicu perang.
+        </item>
+                
+        <item> Di London era Depresi, Jane dan Michael Banks yang sudah dewasa, bersama dengan Michael
+            tiga anak, dikunjungi oleh Mary Poppins yang penuh teka-teki setelah kehilangan pribadi.
+            Melalui keterampilan magisnya yang unik, dan dengan bantuan temannya Jack, dia membantu
+            keluarga menemukan kembali sukacita dan keajaiban yang hilang dalam hidup mereka.
+        </item>
+                
+        <item> Seorang wanita muda misterius, Hester Shaw, muncul sebagai satu-satunya yang bisa menghentikan raksasa,
+            kota predator di atas roda melahap segala sesuatu di jalurnya. Feral, dan sangat didorong oleh
+            ingatan akan ibunya, Hester bergabung dengan Tom Natsworthy, orang buangan dari
+            London, bersama dengan Anna Fang, seorang penjahat berbahaya dengan hadiah di kepalanya.
+        </item>
+                
+        <item> Setelah tiga tahun, bisnis Muslihat, yang telah pensiun sebagai preman, memiliki masalah.
+            Penurunan penjualan. Muslihat juga menghadapi masalah baru ketika Safira, satu-satunya anak perempuannya, tumbuh dewasa
+            dalam masa remaja dan mulai dikunjungi oleh anak laki-laki. Masalah yang lebih besar: gesekan di antara nya
+            mantan bawahan.
+        </item>
+                
+        <item> Seorang pejuang perang salib Robin dari Loxley (Taron Egerton) dan komandan Moornya
+            (Jamie Foxx) melancarkan pemberontakan berani melawan mahkota Inggris yang korup.
+        </item>
+                
+        <item> Miles Morales adalah remaja New York yang berjuang dengan sekolah, teman dan, di atas itu,
+            menjadi Spider-Man baru. Ketika ia menemukan Peter Parker, penyelamat dari
+            New York, di multiverse, Miles harus berlatih untuk menjadi pelindung baru kotanya.
+        </item>
+                
+        <item> Di Stockholm, Swedia, peretas vigilante Lisbeth Salander dipekerjakan oleh komputer
+            programmer Frans Balder untuk mengambil Firefall, sebuah program yang mampu mengakses Internet
+            dunia
+            kode nuklir yang ia kembangkan untuk Badan Keamanan Nasional, seperti yang diyakini Balder
+            terlalu berbahaya untuk ada. Lisbeth berhasil mengambil Firefall dari NSA
+            server, menarik perhatian agen Edwin Needham, tetapi tidak dapat membukanya,
+            dan program ini kemudian dicuri darinya oleh tentara bayaran yang dipimpin oleh Jan Holtser, yang juga
+            mencoba membunuh Lisbeth. Ketika dia tidak menghadiri pertemuan yang dijadwalkan, Balder
+            secara keliru percaya bahwa Lisbeth memutuskan untuk menyimpan Firefall untuk dirinya sendiri dan menghubungi Gabrielle
+            Grane, wakil direktur Dinas Keamanan Swedia (Säpo), yang menggerakkan Balder dan
+            putranya, August, ke rumah persembunyian. Sementara itu, Needham melacak login yang tidak sah
+            ke Stockholm dan tiba untuk mencari Lisbeth dan Firefall.
+        </item>
+                
+        <item> Clint Eastwood berperan sebagai Earl Stone, seorang pria berusia 80-an yang bangkrut, sendirian, dan berhadapan
+            penyitaan bisnisnya ketika dia ditawari pekerjaan yang hanya mengharuskannya mengemudi.
+            Cukup mudah, tetapi, tanpa diketahui Earl, dia baru saja mendaftar sebagai kurir narkoba untuk seorang
+            Kartel meksiko. Dia melakukannya dengan baik, sangat baik, pada kenyataannya, bahwa muatannya meningkat secara eksponensial,
+            dan Earl ditugaskan sebagai penangan. Tapi dia bukan satu-satunya yang mengawasi Earl; itu
+            bagal narkoba baru yang misterius juga menghantam agen DEA Colin Bates yang penuh daya.
+            Dan bahkan ketika masalah uangnya menjadi bagian dari masa lalu, kesalahan masa lalu Earl dimulai
+            untuk sangat membebani dia, dan tidak pasti apakah dia akan punya waktu untuk memperbaiki kesalahan itu
+            sebelum penegak hukum, atau penegak kartel, menyusulnya. "
+        </item>
+                
+        <item>
+        Setelah wawancara yang salah dengan Life Foundation menghancurkan kariernya, mantan reporter
+        Kehidupan Eddie Brock hancur berkeping-keping. Enam bulan kemudian, dia menemukan Life Foundation
+        lagi, dan dia bersentuhan dengan symbiote alien dan menjadi Venom, seorang parasit anti hero
+        </item>
+    </string-array>
+
+    <string-array name="rating_movies">
+        <item>7,7</item>
+        <item>7,1</item>
+        <item>8,5</item>
+        <item>6,6</item>
+        <item>8,0</item>
+        <item>6,8</item>
+        <item>7,2</item>
+        <item>7,7</item>
+        <item>7,5</item>
+        <item>7,9</item>
+        <item>6,7</item>
+        <item>6,6</item>
+        <item>6,8</item>
+        <item>6,1</item>
+        <item>7,8</item>
+        <item>5,3</item>
+        <item>8,4</item>
+        <item>6,1</item>
+        <item>7,0</item>
+        <item>6,7</item>
+    </string-array>
+
+    <!-- Content TV Show -->
+    <integer-array name="poster_tvshows">
+        <item>@drawable/poster_a_star</item>
+        <item>@drawable/poster_aquaman</item>
+        <item>@drawable/poster_avengerinfinity</item>
+        <item>@drawable/poster_birdbox</item>
+        <item>@drawable/poster_bohemian</item>
+        <item>@drawable/poster_bumblebee</item>
+        <item>@drawable/poster_creed</item>
+        <item>@drawable/poster_deadpool</item>
+        <item>@drawable/poster_dragon</item>
+        <item>@drawable/poster_dragonball</item>
+        <item>@drawable/poster_glass</item>
+        <item>@drawable/poster_hunterkiller</item>
+        <item>@drawable/poster_marrypopins</item>
+        <item>@drawable/poster_mortalengine</item>
+        <item>@drawable/poster_preman</item>
+        <item>@drawable/poster_robinhood</item>
+        <item>@drawable/poster_spiderman</item>
+        <item>@drawable/poster_thegirl</item>
+        <item>@drawable/poster_themule</item>
+        <item>@drawable/poster_venom</item>
+    </integer-array>
+
+    <string-array name="title_tvshows">
+        <item>A Star is Born</item>
+        <item>Aquaman</item>
+        <item>Avengers Infinity War</item>
+        <item>BirdBox</item>
+        <item>Bohemian Rhapsody</item>
+        <item>BumbleBee</item>
+        <item>Creed II</item>
+        <item>DeadPool 2</item>
+        <item>How To Train Your Dragon The Hidden World</item>
+        <item>Dragon Ball Broly The Movie</item>
+        <item>Glass</item>
+        <item>Hunter Killer</item>
+        <item>Marry Poppins Returns</item>
+        <item>Mortal Engines</item>
+        <item>Preman Pensiun</item>
+        <item>Robin Hood</item>
+        <item>SpiderMan: Into The Spider Verse</item>
+        <item>The Girl In The Spider\'s Web</item>
+        <item>The Mule</item>
+        <item>Venom</item>
+    </string-array>
+
+    <string-array name="ph_tvshows">
+        <item>Warner Bros. Pictures</item>
+        <item>DC Entertainment</item>
+        <item>Marvel Studios</item>
+        <item>Netflix</item>
+        <item>GK Films</item>
+        <item>Hasbro</item>
+        <item>MGM Pictures, Warner Bros</item>
+        <item>20th Century Fox, Marvel</item>
+        <item>DreamWorks</item>
+        <item>Toei, Fox International</item>
+        <item>Universal Pictures</item>
+        <item>HK Productions</item>
+        <item>Walt Disney</item>
+        <item>MRC</item>
+        <item>MNC Pictures</item>
+        <item>Summit Entertainment</item>
+        <item>Sony, Columbia Pictures, Marvel</item>
+        <item>Columbia Pictures, MGM</item>
+        <item>Warner Bros</item>
+        <item>Columbia, Marvel</item>
+    </string-array>
+
+    <string-array name="storyline_tvshows">
+        <item>Musisi kawakan Jackson Maine (Bradley Cooper) menemukan-dan jatuh cinta
+             dengan artis yang sedang berjuang Ally (Gaga). Dia baru saja menyerah pada mimpinya untuk berhasil
+             sebesar penyanyi - sampai Jack membujuknya menjadi sorotan. Tetapi bahkan sebagai karier Ally
+             lepas landas, sisi pribadi hubungan mereka rusak, seperti Jack berkelahi
+             pertempuran yang sedang berlangsung dengan setan internalnya sendiri.
+        </item>
+        <item>Arthur Curry, setengah manusia dari Atlantis, melakukan perjalanan seumur hidup. Tidak hanya
+             apakah petualangan ini memaksanya untuk berdamai dengan identitas aslinya, tetapi juga
+             memaksanya untuk menemukan apakah dia sepenuhnya layak memenuhi takdirnya sendiri:
+             menjadi raja.
+        </item>
+        <item>Sebagai Avengers dan sekutu mereka terus melindungi dunia dari ancaman juga
+             besar untuk ditangani oleh satu pahlawan, bahaya baru telah muncul dari bayang-bayang kosmik:
+             Terima kasih. Seorang lalim penghinaan intergalaksi, tujuannya adalah untuk mengumpulkan semua enam Infinity
+             Batu, artefak dari kekuatan yang tak terbayangkan, dan menggunakannya untuk menimbulkan keinginan bengkok pada semuanya
+             realitas. Segala yang Avengers telah perjuangkan telah mengarah ke saat ini, nasib
+             Bumi dan keberadaan tidak pernah lebih pasti.
+        </item>
+        <item>In the wake of an unknown global terror, a mother must find the strength to flee with
+            her children down a treacherous river in search of safety. Due to unseen deadly forces,
+            the perilous journey must be made blindly. Directed by Emmy winner Susanne Bier, Bird
+            Box is a thriller starring Academy Award winner Sandra Bullock, John Malkovich, Sarah
+            Paulson, and Trevante Rhodes.
+        </item>
+        <item>Dalam bangun dari teror global yang tidak diketahui, seorang ibu harus menemukan kekuatan untuk melarikan diri
+             anak-anaknya menyusuri sungai berbahaya untuk mencari keselamatan. Karena kekuatan mematikan yang tak terlihat,
+             perjalanan berbahaya harus dilakukan secara membabi buta. Disutradarai oleh pemenang Emmy Susanne Bier, Bird
+             Box adalah film thriller yang dibintangi oleh pemenang Penghargaan Academy, Sandra Bullock, John Malkovich, Sarah
+             Paulson, dan Trevante Rhodes.
+        </item>
+        <item>Di Cybertron, Autobots, yang dipimpin oleh Optimus Prime, hampir kehilangan Great
+            Perang Cybertronian ke musuh-musuh mereka, Decepticons, dan mulai membuat persiapan untuk
+            tinggalkan planet ini. Decepticons yang dipimpin oleh Shockwave, Soundwave dan Starscream menyergap mereka
+            selama evakuasi, dan Optimus mengirimkan pengintai muda, B-127, ke Bumi untuk mengatur
+            sebuah basis operasi di mana Autobots dapat berkumpul kembali. B-127 mencapai Bumi sendirian di
+            1987, crash-landing di California dan mengganggu latihan yang sedang dilakukan oleh
+            Sektor 7, sebuah agen rahasia pemerintah yang memantau aktivitas luar angkasa di Bumi.
+            Agen Sektor 7 Kolonel Jack Burns menganggap B-127 sebagai penyerang dan serangan yang bermusuhan,
+            mengendarai B-127 ke hutan, di mana ia kemudian disergap oleh Decepticon Blitzwing.
+            Ketika B-127 menolak untuk mengungkapkan keberadaan Optimus, Blitzwing dengan dengki mengeluarkannya
+            kotak suara dan merusak inti memorinya. B-127 berhasil menghancurkan Blitzwing sebelumnya
+            pingsan karena lukanya.
+        </item>
+        <item>Bertahun-tahun setelah Adonis Creed membuat nama untuk dirinya sendiri di bawah bimbingan Rocky Balboa, the
+            petinju muda menjadi Juara Kelas Berat Dunia. Sementara hidup itu baik dengan itu
+            Kemenangan dan pernikahannya dengan Bianca, masalah datang ke Philadelphia ketika Ivan Drago, yang
+            Petinju Rusia yang membunuh ayah Adonis, Apollo, tiba bersama putranya, Viktor, untuk
+            tantang Adonis. Terhadap saran Rocky, Adonis menerima tantangan tanpa itu
+            partisipasi mentor dan membayar harga dalam pertarungan hukuman dia hanya menang dengan a
+            teknis. Sekarang terluka dan kehilangan semangat, Adonis tidak dapat membawa dirinya kembali ke
+            game, meninggalkan semangat dan gelarnya dalam bahaya. Bersama-sama, keluarga Adonis dan Rocky harus
+            menemukan cara untuk menyalakan kembali semangat juang Adonis untuk menghadapi masa depan dalam pilihan apa pun yang dia
+            membuat. Sementara itu, keluarga Drago memiliki masalah sendiri dalam mencoba mendapatkan kembali rasa hormat di
+            tanah air mereka bahwa mereka kehilangan di tangan Rocky ketika mereka bertanya-tanya apakah itu benar-benar layak.
+        </item>
+        <item>Setelah kehilangan Vanessa (Morena Baccarin), cinta dalam hidupnya, Ttentara bayaran Wade Wilson
+            alias Deadpool (Ryan Reynolds) harus membentuk tim dan melindungi a
+             muda, mutan lengkap Russell Collins alias Firefist (Julian Dennison) dari Cable
+             (Josh Brolin), cyborg yang tidak masuk akal, berbahaya dari masa depan, dan juga harus belajar
+             pelajaran terpenting: menjadi bagian dari keluarga lagi.
+        </item>
+        <item>Saat Hiccup memenuhi mimpinya untuk menciptakan utopia naga yang damai, Toothless
+             Penemuan pasangan yang liar dan sulit ditangkap menarik Night Fury pergi. Saat bahaya meningkat
+             rumah dan pemerintahan Hiccup sebagai kepala desa diuji, baik naga dan pengendara harus membuat
+             keputusan mustahil untuk menyelamatkan jenis mereka.
+        </item>
+        <item>Goku dan Vegeta bertemu Broly, seorang prajurit Saiyan tidak seperti petarung yang pernah mereka hadapi
+             sebelumnya.
+        </item>
+        <item> Setelah mengejar Kevin Wendell Crumb dan beberapa identitas yang ada di dalamnya.
+            David Dunn menemukan dirinya terkunci di rumah sakit jiwa bersama musuh bebuyutannya, Elia
+            Harga dan harus bersaing dengan psikiater yang keluar untuk membuktikan trio tidak benar-benar
+            memiliki kemampuan manusia super
+        </item>
+                
+        <item> Kapal selam A.S., USS Tampa Bay, menghilang saat membayangi kelas Akula Rusia
+            kapal selam di Kutub Utara. Laksamana Muda John Fisk mengirim kapal selam kelas Virginia, yang
+            USS Arkansas, di bawah komando Komandan Joe Glass yang baru dipromosikan dan tidak ortodoks
+            menyelidiki. Pada saat yang sama, tim Navy SEAL di bawah komando Letnan Bill
+            Beaman dikirim untuk secara diam-diam mengamati pangkalan angkatan laut Rusia. Ketika mereka tiba di
+            pangkalan angkatan laut, mereka menyaksikan menteri pertahanan Dmitri Durov melakukan kudeta dan
+            membawa tahanan Presiden Rusia Zakarin, dan dengan cepat menyadari bahwa Durov bermaksud
+            memicu perang.
+        </item>
+                
+        <item> Di London era Depresi, Jane dan Michael Banks yang sudah dewasa, bersama dengan Michael
+            tiga anak, dikunjungi oleh Mary Poppins yang penuh teka-teki setelah kehilangan pribadi.
+            Melalui keterampilan magisnya yang unik, dan dengan bantuan temannya Jack, dia membantu
+            keluarga menemukan kembali sukacita dan keajaiban yang hilang dalam hidup mereka.
+        </item>
+                
+        <item> Seorang wanita muda misterius, Hester Shaw, muncul sebagai satu-satunya yang bisa menghentikan raksasa,
+            kota predator di atas roda melahap segala sesuatu di jalurnya. Feral, dan sangat didorong oleh
+            ingatan akan ibunya, Hester bergabung dengan Tom Natsworthy, orang buangan dari
+            London, bersama dengan Anna Fang, seorang penjahat berbahaya dengan hadiah di kepalanya.
+        </item>
+                
+        <item> Setelah tiga tahun, bisnis Muslihat, yang telah pensiun sebagai preman, memiliki masalah.
+            Penurunan penjualan. Muslihat juga menghadapi masalah baru ketika Safira, satu-satunya anak perempuannya, tumbuh dewasa
+            dalam masa remaja dan mulai dikunjungi oleh anak laki-laki. Masalah yang lebih besar: gesekan di antara nya
+            mantan bawahan.
+        </item>
+                
+        <item> Seorang pejuang perang salib Robin dari Loxley (Taron Egerton) dan komandan Moornya
+            (Jamie Foxx) melancarkan pemberontakan berani melawan mahkota Inggris yang korup.
+        </item>
+                
+        <item> Miles Morales adalah remaja New York yang berjuang dengan sekolah, teman dan, di atas itu,
+            menjadi Spider-Man baru. Ketika ia menemukan Peter Parker, penyelamat dari
+            New York, di multiverse, Miles harus berlatih untuk menjadi pelindung baru kotanya.
+        </item>
+                
+        <item> Di Stockholm, Swedia, peretas vigilante Lisbeth Salander dipekerjakan oleh komputer
+            programmer Frans Balder untuk mengambil Firefall, sebuah program yang mampu mengakses Internet
+            dunia
+            kode nuklir yang ia kembangkan untuk Badan Keamanan Nasional, seperti yang diyakini Balder
+            terlalu berbahaya untuk ada. Lisbeth berhasil mengambil Firefall dari NSA
+            server, menarik perhatian agen Edwin Needham, tetapi tidak dapat membukanya,
+            dan program ini kemudian dicuri darinya oleh tentara bayaran yang dipimpin oleh Jan Holtser, yang juga
+            mencoba membunuh Lisbeth. Ketika dia tidak menghadiri pertemuan yang dijadwalkan, Balder
+            secara keliru percaya bahwa Lisbeth memutuskan untuk menyimpan Firefall untuk dirinya sendiri dan menghubungi Gabrielle
+            Grane, wakil direktur Dinas Keamanan Swedia (Säpo), yang menggerakkan Balder dan
+            putranya, August, ke rumah persembunyian. Sementara itu, Needham melacak login yang tidak sah
+            ke Stockholm dan tiba untuk mencari Lisbeth dan Firefall.
+        </item>
+                
+        <item> Clint Eastwood berperan sebagai Earl Stone, seorang pria berusia 80-an yang bangkrut, sendirian, dan berhadapan
+            penyitaan bisnisnya ketika dia ditawari pekerjaan yang hanya mengharuskannya mengemudi.
+            Cukup mudah, tetapi, tanpa diketahui Earl, dia baru saja mendaftar sebagai kurir narkoba untuk seorang
+            Kartel meksiko. Dia melakukannya dengan baik, sangat baik, pada kenyataannya, bahwa muatannya meningkat secara eksponensial,
+            dan Earl ditugaskan sebagai penangan. Tapi dia bukan satu-satunya yang mengawasi Earl; itu
+            bagal narkoba baru yang misterius juga menghantam agen DEA Colin Bates yang penuh daya.
+            Dan bahkan ketika masalah uangnya menjadi bagian dari masa lalu, kesalahan masa lalu Earl dimulai
+            untuk sangat membebani dia, dan tidak pasti apakah dia akan punya waktu untuk memperbaiki kesalahan itu
+            sebelum penegak hukum, atau penegak kartel, menyusulnya. "
+        </item>
+                
+        <item>
+        Setelah wawancara yang salah dengan Life Foundation menghancurkan kariernya, mantan reporter
+        Kehidupan Eddie Brock hancur berkeping-keping. Enam bulan kemudian, dia menemukan Life Foundation
+        lagi, dan dia bersentuhan dengan symbiote alien dan menjadi Venom, seorang parasit anti hero
+        </item>
+    </string-array>
+
+    <string-array name="rating_tvshows">
+        <item>7,7</item>
+        <item>7,1</item>
+        <item>8,5</item>
+        <item>6,6</item>
+        <item>8,0</item>
+        <item>6,8</item>
+        <item>7,2</item>
+        <item>7,7</item>
+        <item>7,5</item>
+        <item>7,9</item>
+        <item>6,7</item>
+        <item>6,6</item>
+        <item>6,8</item>
+        <item>6,1</item>
+        <item>7,8</item>
+        <item>5,3</item>
+        <item>8,4</item>
+        <item>6,1</item>
+        <item>7,0</item>
+        <item>6,7</item>
+    </string-array>
+    <string name="title_tvshow">Judul Serial TV</string>
+
+
+</resources>
